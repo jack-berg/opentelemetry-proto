@@ -23,7 +23,7 @@ jobs:
     - name: git
       run: |
         git fetch --tags origin
-        git tag
+        echo $(git tag)
         git describe
         git tag --sort=committerdate | tail -1
     - name: Run make breaking-change with json output to annotate PR
