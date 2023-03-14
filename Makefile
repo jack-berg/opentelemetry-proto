@@ -150,4 +150,5 @@ gen-ruby:
 	
 .PHONY: breaking-change
 breaking-change:
+	@echo $(value LAST_RELEASE_TAG)
 	$(BUF) breaking --against $(BUF_AGAINST) $(BUF_FLAGS)

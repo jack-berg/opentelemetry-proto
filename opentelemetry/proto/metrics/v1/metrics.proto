@@ -568,7 +568,7 @@ message ExponentialHistogramDataPoint {
   // When ZeroThreshold is unset or 0, zero count bucket stores
   // values that cannot be expressed using the standard exponential formula as
   // well as values that have been rounded to zero.
-  optional double zero_threshold = 14;
+  double zero_threshold = 14;
 }
 
 // SummaryDataPoint is a single data point in a timeseries that describes the
