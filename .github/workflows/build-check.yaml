@@ -21,10 +21,10 @@ jobs:
       with:
         fetch-depth: 0
     - name: git
-    run: |
-      git tag
-      git describe
-      git tag --sort=committerdate | tail -1
+      run: |
+        git tag
+        git describe
+        git tag --sort=committerdate | tail -1
     - name: Run make breaking-change with json output to annotate PR
       # Formats JSON output into Github workflow commands
       # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-error-message
